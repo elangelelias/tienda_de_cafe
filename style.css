@@ -1,0 +1,130 @@
+:root{
+    --color-secundario: #F9F5EF;
+    --color-primario: #C7A17C;
+    --color-black: black;
+}
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+/* el html es el q tiene el tamaño de 16px por defecto en el navegador
+   en el ejercicio se pasar a 10px (para saber q 1rem=10px, 2rem=20px, es decir mejora el calculo al utilizar rem) estos equivale a 62.5% 
+        16px ----100%
+        10px ---- x?=> 10=>62.5% 
+    porq se utiliza 62.5% y no directamente 10px? porq el usuario o el navegador puedo haber cambiado el tamaño manualmente 
+    por lo tanto al colocarlo en porcentaje es mas flexible.
+*/
+
+html{
+    font-size: 62.5%; /* 10px*/
+}
+
+body{
+    font-family: "Poppins",sans-serif;
+}
+
+h1,p{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.contenedor-hero {
+    
+    width: 100%;
+    background-color: var(--color-secundario);
+    
+}
+
+header .contenedor{
+    display: flex;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 2rem 0;
+
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.contenedor-teleoperador{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+} 
+.contenedor-teleoperador i{
+    font-size: 3.3rem;
+}
+
+header .contenedor-logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+header .contenedor-logo a{
+    
+     text-decoration: none;    
+     color: var(--color-black);
+     font-size: 3rem;
+     letter-spacing: -1px;
+
+
+}
+
+header .contenedor-logo i{
+    font-size: 3rem;
+}
+
+.contenedor-compras{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contenedor-compras .fa-user-large{
+    font-size: 3rem;
+    color: var(--color-primario);
+    padding-right: 2.5rem;
+    border-right: 1px solid #e2e2e2;
+    
+}
+
+.contenedor-compras .fa-basket-shopping{
+    font-size: 3rem;
+    color: var(--color-primario);
+    padding-left: 1rem;
+}
+
+
+.contenedor-navbar{
+    background-color: var(--color-primario);
+}
+
+.fa-bars{
+    display: none;
+}
+
+.contenedor-lista{
+    display: flex;
+    gap: 2rem;
+    padding: 0; 
+}
+
+.contenedor-lista a{
+    color: var(--color-black);
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+
+ 
