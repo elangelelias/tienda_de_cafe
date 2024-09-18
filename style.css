@@ -38,6 +38,8 @@ a{
 }
 
 
+/* CONTENIDO HERO */
+
 .contenedor-hero {
     
     width: 100%;
@@ -105,6 +107,7 @@ header .contenedor-logo i{
     padding-left: 1rem;
 }
 
+/* SECCION NAVBAR */
 
 .contenedor-navbar{
     background-color: var(--color-primario);
@@ -122,9 +125,30 @@ header .contenedor-logo i{
 
 .contenedor-lista a{
     color: var(--color-black);
-    font-size: 1.4rem;
-    font-weight: bold;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
 }
 
+.contenedor-lista a::after{
+    content: "";
+    width: 1.5rem;
+    height: 1px;
+    background-color: white;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%,50%);
+    opacity: 0;
+    transition: all .3s ease;
+
+}
+
+.contenedor-lista a:hover::after{
+    opacity: 1;
+}
+.contenedor-lista a:hover{
+    color: white;
+}
 
  
