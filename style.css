@@ -2,6 +2,7 @@
     --color-secundario: #F9F5EF;
     --color-primario: #C7A17C;
     --color-black: black;
+    --color-grey: #777;
 }
 
 *,
@@ -151,4 +152,45 @@ header .contenedor-logo i{
     color: white;
 }
 
+.contenedor-buscador{
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 2rem;
+    background-color: white;
+    height: 4.4rem;
+    overflow: hidden;
+}
+
+.contenedor-buscador input{
+    outline: none;
+    font-family: inherit;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: var(--color-grey);
+    cursor: pointer;
+}
+
+.contenedor-buscador input::-webkit-search-cancel-button{
+    appearance: none;
+}
+
+.contenedor-buscador .boton-buscador{
+    border: none;
+    background-color: var(--color-primario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+    
+}
+
+.boton-buscador i{
+    font-size: 2rem;
+    color: white;
+}
  
