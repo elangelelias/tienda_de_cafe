@@ -48,7 +48,7 @@ a{
     
 }
 
-header .contenedor{
+.contenedor{
     display: flex;
     max-width: 120rem;
     margin: 0 auto;
@@ -231,4 +231,41 @@ header .contenedor-logo i{
     display: inline-block;
     padding: 1rem 3rem;
     border-radius: 3rem;
+}
+
+/* fractura */
+
+.contenedor-fractura{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    padding: 3rem 0;
+}
+
+.card-fractura{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;    
+    gap: 1.5rem;
+    border-radius: 1rem;
+    padding: 1.5rem 0;
+}
+.card-fractura i{
+    font-size: 2.7rem;
+    color: var(--color-primario);
+
+}
+
+.texto-fractura{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem
+
+}
+
+.texto-fractura .titulo-fractura{
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--color-black);
 }
