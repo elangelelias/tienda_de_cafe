@@ -12,11 +12,11 @@
 }
 
 /* el html es el q tiene el tamaño de 16px por defecto en el navegador
-   en el ejercicio se pasar a 10px (para saber q 1rem=10px, 2rem=20px, es decir mejora el calculo al utilizar rem) estos equivale a 62.5% 
-        16px ----100%
-        10px ---- x?=> 10=>62.5% 
-    porq se utiliza 62.5% y no directamente 10px? porq el usuario o el navegador puedo haber cambiado el tamaño manualmente 
-    por lo tanto al colocarlo en porcentaje es mas flexible.
+en el ejercicio se pasar a 10px (para saber q 1rem=10px, 2rem=20px, es decir mejora el calculo al utilizar rem) estos equivale a 62.5% 
+16px ----100%
+10px ---- x?=> 10=>62.5% 
+porq se utiliza 62.5% y no directamente 10px? porq el usuario o el navegador puedo haber cambiado el tamaño manualmente 
+por lo tanto al colocarlo en porcentaje es mas flexible.
 */
 
 html{
@@ -38,6 +38,11 @@ a{
     text-decoration: none;
 }
 
+.titulo{
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+}
 
 /* CONTENIDO HERO */
 
@@ -285,9 +290,6 @@ header .contenedor-logo i{
     margin-bottom: 3rem;
 }
 
-.titulo-categoria{
-    margin: 0 auto;
-}
 
 .contenedor-categoria{
     display: grid;
@@ -352,4 +354,52 @@ header .contenedor-logo i{
     left: 50%;
     transform: translate(-50% ,50%);
 
+}
+
+/* CONTENEDOR MAIN */
+
+.contenedor-main{
+    background-color: var(--color-secundario);
+}
+
+
+/* PRODUCTOS */
+
+.mejore-producto{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.contenedor-opcione{
+    display: flex;
+    justify-content:center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.contenedor-opcione span{
+    color: var(--color-grey);
+    background-color: white;
+    padding: .7rem 3rem;
+    font-size: 1.4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all ease .3s;
+}
+
+.contenedor-opcione span:hover{
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.contenedor-opcione span.activa{
+    background-color: var(--color-primario);
+    color: white;
+} 
+
+.contenedor-opcione span:focus{
+    background-color: var(--color-primario);
+    color: white;
 }
