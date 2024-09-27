@@ -176,7 +176,7 @@ header .contenedor-logo i{
     font-size: 1.4rem;
     padding: 0 2rem;
     color: var(--color-grey);
-    cursor: pointer;
+    cursor: text;
 }
 
 .contenedor-buscador input::-webkit-search-cancel-button{
@@ -299,7 +299,7 @@ header .contenedor-logo i{
 
 .card-categoria{
     height: 20rem;
-    width: 40rem;
+    width: 38rem;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;
