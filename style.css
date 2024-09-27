@@ -455,30 +455,91 @@ header .contenedor-logo i{
     color: var(--color-primario);
 }
 
-.descuento{
-    position: absolute;
-    left: 3rem;
-    top: 2rem;
-    background-color: var(--color-primario);
-    padding: 0.4rem 1rem;
-    border-radius: 3rem;
-    color: white;
+.add-cart{
+    justify-self: start;
+   border: 2px solid var(--color-primario); 
+   padding: 1rem;
+   border-radius: 50%;
+   cursor: pointer;
+   transition: all .4s ease;
 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.add-cart:hover{
+    background-color: var(--color-primario);
+}
+
+.add-cart i{
+    font-size: 1.5rem;
+    color: var(--color-primario);
+}
+.add-cart:hover i{
+    color: white;
+}
+
+.contenido-card-producto .precio{
+    justify-self: end;
+    align-self: center;
+
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.contenido-card-producto .precio span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-decoration: line-through;
+    color: var(--color-grey);
+    margin-left: .5rem;
+}
+
+.contenedor-img .descuento{
+    position: absolute;
+    left: 0;
+    background-color: var(--color-primario);
+    padding: 2px 1.2rem;
+    border-radius: 1rem;
+    color: white;
+    font-size: 1.2rem;
+
+}
+.card-producto:hover .descuento{
+    background-color: black;
 }
 
 .grupo-boton{
-    position: absolute;
-    right: 2rem;
-    top: 3rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    z-index: -1;
+    transition: all .4s ease;
+    
 }
 
-.grupo-boton .fa-regular{
-    font-size: 2rem;
+.grupo-boton span{
+    border: 1px solid var(--color-primario);
+    padding: .8rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .4s ease;
 }
 
+.grupo-boton span:hover{
+    background-color: var(--color-primario);
+}
+
+.card-producto:hover .grupo-boton{
+    z-index: 0;
+    right: -1rem;
+}
